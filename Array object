@@ -1,0 +1,54 @@
+//Javascript Array Object
+
+//create an array using new keyword
+var myColors = new Array("Red", "Green","Blue");
+document.write(myColors[1]+ "<br>"); // array starts at zero
+// alternate syntax
+var myColors=["red","green","blue"];
+document.write(myColors[0]+"<br>")
+// modify array element
+myColors[1]= "Yellow";
+document.write(myColors[1] +"<br>");
+// access all elements of an array
+document.write(myColors + "<br>");
+//find length of array
+document.write(myColors.length+ "<br>");
+// sort array alphabetically
+document.write(myColors.sort()+ "<br>");
+//revers an array
+document.write(myColors.reverse()+"<br>");
+// add element using push
+myColors.push("Pink");
+document.write(myColors+"<br>");
+// remove an element using pop
+myColors.pop("Pink");
+
+//join two arrays or more
+var listOfNumber1= [1,2,3];
+var listOfNumber2= [4,5,6];
+
+var allNumbers= listOfNumber1.concat(listOfNumber2);
+document.write(allNumbers+"<br>");
+
+//loop through array elements
+
+var myCars= ["BMW","honda","toyota"];
+for (var i =0; i<myCars.length; i++){
+    document.write(myCars[i]+ "<br>");
+}
+
+
+// array of objects
+var myCars= [
+    {model:"BMW", year: 2016},
+    {model:"honda",year: 2007},
+    {model:"BMW", year: 2009},
+    
+];
+for(var k=0; k<myCars.length; k++){
+    var myCar="";
+    for (var cp in myCars[k]){
+        myCar= myCar+myCars[k][cp];
+    }
+    document.write(myCar+"<br>");
+}
