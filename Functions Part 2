@@ -1,0 +1,46 @@
+
+//Javascript function as variable & anonymous function
+
+function sum(x,y){
+    return (x+y);
+    
+}
+var s = sum;
+var r = s(10,20);
+
+document.write(r+"<br>");
+// define function without a name
+// Anonymous function
+var isAdult = function(age){
+  if( age >= 18)  {
+      return "yes";
+  } else {
+      return "no";
+  }
+};
+var k = isAdult(25);
+document.write( "Adult status is:" +k);
+
+
+//Javascript Self Executing Anonymous function
+//self executing anonymous function
+(function(){
+    alert("auto show up message");
+})();
+//option 2:
+(function(){
+    alert("auto show up message");
+}());
+
+//pass argument to self executing function
+
+(function(x,y){
+    alert("Sum of x&y:" + (x+y));
+})(10,20); 
+
+// self executing function with return value
+var sum = (function(x,y) {
+    return(x+y);
+})(10,17);
+alert("Returned Sum:" + sum);
+
