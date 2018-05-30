@@ -1,0 +1,32 @@
+//JavaScript String Type & String object
+
+// create a string using new keyword - not recommended, complicating
+
+var ss= new String("this is america");
+document.write(ss+"<br>");
+var s= "This is usa";
+document.write(s+"<br>");
+
+// add special characters into string
+
+var myString= "This is \"vanilla\" ice creeam"; // adds "" at the backslahed word
+document.write(myString+"<br>");
+var myString= "This is \\vanilla\\ ice creeam"; // adds \\ at the backslashed
+
+// string properties and methods
+var myQuestion= "Where do you live??";
+//length of string
+document.write("Lenght: "+myQuestion.length+"<br>");
+//index of 
+document.write("Index of: "+myQuestion.indexOf("you")+"<br>");
+//sub string
+document.write(myQuestion.substring(6,12));// starts at 6, ends at 12
+// replace string
+document.write(myQuestion.replace("live","go")+"<br>");
+
+//uppercase
+document.write(myQuestion.toUpperCase()+"<br>");
+// lower case
+document.write(myQuestion.toLowerCase()+"<br>");
+// character at
+document.write(myQuestion.charAt(2)+"<br>");
