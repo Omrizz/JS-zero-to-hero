@@ -1,0 +1,65 @@
+
+
+//JavaScript Functions & Scope
+// global scope
+var x =20;
+function function1(){
+    alert("x=" +x+ " accessed inside of a function");
+    
+}
+function1();
+alert( "x=" +x+ " accessed outside of a function");
+
+// local scope
+//function scope
+function function2(){
+    //local scope variable
+    var y= 50;
+    document.write("y =" +y+ " accessed inside of function");
+}
+function2();
+
+
+//automatical global variable
+function function3(){
+    //automatically global- just by initialization
+    z=100;
+ document.write("z =" +z+ " accessed inside of function.<br>");
+   
+}
+function3();
+document.write("z =" +z+ " accessed outside of function");
+
+
+//Javaascript Nested functions
+
+//nested function
+
+function outerFunction(){
+    
+    function innerFunction(){
+        document.write("Code execution inside inner function");
+    }
+    innerFunction();
+
+}
+outerFunction();    
+
+
+// scoping rules 
+function outerFunction2(x,y){
+    var d= 20;
+    function innerFunction2(){
+        
+        var g=10;
+        
+        document.write("g=" +g+ "<br>");
+        document.write("d=" +d+ "<br>");
+        document.write("x=" +x+ "<br>");
+        document.write("y=" +y+ "<br>");
+            
+    }
+    innerFunction2();
+}
+outerFunction2(30,40);
+
