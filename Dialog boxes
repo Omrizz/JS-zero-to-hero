@@ -1,0 +1,22 @@
+//javaScript Dialog Boxes
+
+//alert function
+//alert("welcome to this website.");
+//confirm function
+/*var v = confirm("do you want us to send you daily news?");
+if (v){
+    document.write("Ok, we will send you");
+}else{
+    document.write("Ok, we will not send");
+}
+
+// prompt function
+var visitorAge= prompt("Enter your age:");
+if (visitorAge >= 18){
+    document.write("you are good to go");
+}else{
+    document.write("You are underaged");
+    document.write(visitorAge);
+}
+
+
